@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#455EE3</color> <!-- Electric Blue -->
+    <color name="primary_dark">#4AA9CD</color> <!-- Vibrant Cyan -->
+    <color name="secondary">#2251A1</color> <!-- Deep Blue -->
+    <color name="light_gray">#F0F0F0</color> <!-- Soft Gray -->
+    <color name="accent">#E84545</color> <!-- Brilliant Red -->
+    <color name="white">#FFFFFF</color> <!-- Classic White -->
+</resources>

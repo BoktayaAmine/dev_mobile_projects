@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/item_background"
+    android:elevation="8dp"
+    android:clipToPadding="false"
+    android:clipChildren="false">
+
+<TextView
+android:id="@+id/compte_id"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="ID: 123"
+android:textSize="20sp"
+android:textStyle="bold"
+android:textColor="@color/primary_dark"
+android:layout_marginBottom="8dp" />
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:background="@color/light_gray"
+android:layout_marginBottom="8dp" />
+
+<TextView
+android:id="@+id/compte_solde"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Solde: $1000"
+android:textSize="18sp"
+android:textColor="@color/primary"
+android:layout_marginBottom="4dp" />
+
+<TextView
+android:id="@+id/compte_date_creation"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Date: 2024-11-28"
+android:textSize="16sp"
+android:textColor="@color/secondary"
+android:layout_marginBottom="4dp" />
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="8dp">
+
+<TextView
+    android:id="@+id/compte_type"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Type: Checking"
+    android:textSize="16sp"
+    android:textColor="@color/white"
+    android:background="@drawable/type_badge"
+    android:paddingVertical="4dp"
+    android:paddingHorizontal="8dp"
+    android:layout_gravity="center" />
+
+
+</LinearLayout>
+
+</LinearLayout>

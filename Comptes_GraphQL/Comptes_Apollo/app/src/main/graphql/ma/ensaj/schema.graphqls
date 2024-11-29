@@ -1,0 +1,44 @@
+# Domain-specific schema for "Compte"
+
+type Compte {
+  id: ID
+  solde: Float
+  dateCreation: String
+  type: TypeCompte
+}
+
+input CompteRequest {
+  id: ID
+  solde: Float
+  dateCreation: String
+  type: TypeCompte
+}
+
+
+type Mutation {
+  saveCompte(compte: CompteRequest): Compte
+  deleteCompte(id: ID): String
+}
+
+type Query {
+  allComptes: [Compte]
+  compteById(id: ID): Compte
+  compteByType(type: TypeCompte): [Compte]
+  totalSolde: SoldeStats
+}
+
+type SoldeStats {
+  count: Int
+  sum: Float
+  average: Float
+}
+
+enum TypeCompte {
+  COURANT
+  EPARGNE
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}
